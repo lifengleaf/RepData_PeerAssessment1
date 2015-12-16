@@ -154,7 +154,7 @@ wkdata<- with(actdata2,aggregate(steps2,by=list(daytype=wktype,intervals=interva
 
 # use lattice plotting system to make conditional panel plot.
 library(lattice)
-xyplot(x ~ intervals | daytype, data=wkdata, type="l", layout=c(1,2))
+xyplot(x ~ intervals | daytype, data=wkdata, type="l", layout=c(1,2),ylab="Average Steps")
 
 ```
 
